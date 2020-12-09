@@ -13,7 +13,7 @@ pipeline {
       stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("catnip:${env.BUILD_ID}")
+                    myapp = docker.build("dockermaty1997/catnip:${env.BUILD_ID}")
                 }
             }
         }
