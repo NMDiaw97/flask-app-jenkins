@@ -33,7 +33,7 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-          kubernetesDeploy(configs: "catnip.yml", kubeconfigId: "kubediaf")
+          kubernetesDeploy(configs: "catnip.yml", kubeconfigId: "mykubeconfig")
         }
       }
     }
